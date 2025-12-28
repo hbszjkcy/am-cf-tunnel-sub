@@ -16,10 +16,6 @@ let socks5Enable = false;
 let parsedSocks5 = {};
 
 let ipLocal = [
-    'wto.org:443#youtube.com/@am_clubs 数字套利(视频教程)',
-    'icook.hk#t.me/am_clubs TG群(加入解锁更多节点)',
-    'time.is#github.com/amclubs GitHub仓库(关注查看新功能)',
-    '127.0.0.1:1234#amclubss.com 博客教程(cfnat)'
 ];
 
 const defaultIpUrlTxt = base64Decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FtY2x1YnMvYW0tY2YtdHVubmVsL21haW4vZXhhbXBsZS9pcHY0LnR4dA==');
@@ -1153,10 +1149,6 @@ function getConfigHtml(host, remark, v2, clash) {
     const header = `
         <div class="links">
             <div class="link-row">
-                <a href="${ytName}" target="_blank">🎬 YouTube</a>
-                <a href="${tgName}" target="_blank">💬 Telegram</a>
-                <a href="${ghName}" target="_blank">📂 GitHub</a>
-                <a href="${bName}" target="_blank">🌐 Blog</a>
                 <a href="https://${host}/${id}/ips" rel="noopener">⚡ 在线优选IP</a>
                 <a href="https://${host}/${id}/setting" rel="noopener">⚙️ 自定义设置</a>
             </div>
@@ -1483,10 +1475,6 @@ async function getSettingHtml(host) {
                 <button class="back-btn" onclick="goHome()">🏠 返回主页</button>
             </div>
             <div class="navbar-right">
-                <a href="https://youtube.com/@am_clubs?sub_confirmation=1" target="_blank">🎬 YouTube</a>
-                <a href="https://t.me/am_clubs" target="_blank">💬 Telegram</a>
-                <a href="https://github.com/am-cf-tunnel" target="_blank">📂 GitHub</a>
-                <a href="https://amclubss.com" target="_blank">🌐 Blog</a>
             </div>
         </div>
 
@@ -1771,12 +1759,6 @@ function renderPage({ base64Title, suffix = '', heading, bodyContent, ytName, tg
     ${bodyContent}
     <div class="links">
         <div class="link-row">
-            <a href="${ytName}" target="_blank">🎬 YouTube</a>
-            <a href="${tgName}" target="_blank">💬 Telegram</a>
-        </div>
-        <div class="link-row">
-            <a href="${ghName}" target="_blank">📂 GitHub</a>
-            <a href="${bName}" target="_blank">🌐 Blog</a>
         </div>
     </div>
     </div>
@@ -2313,10 +2295,6 @@ function htmlPage() {
             <button class="back-btn" onclick="goHome()">🏠 主页</button>
         </div>
         <div class="navbar-right">
-            <a href="https://youtube.com/@am_clubs?sub_confirmation=1" target="_blank">🎬 YouTube</a>
-            <a href="https://t.me/am_clubs" target="_blank">💬 Telegram</a>
-            <a href="https://github.com/am-cf-tunnel" target="_blank">📂 GitHub</a>
-            <a href="https://amclubss.com" target="_blank">🌐 Blog</a>
         </div>
     </div>
     <span id="cf-check" style="font-size:0.9em;"></span>
